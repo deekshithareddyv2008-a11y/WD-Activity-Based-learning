@@ -1,0 +1,306 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background-color: #fffaf3;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h2 {
+            text-align: center;
+            color: #7b2d26;
+            margin-bottom: 25px;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-color: #3b2118;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h1 {
+            color: #e9b872;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 8px;
+        }
+
+        nav a:hover {
+            color: #e9b872;
+        }
+
+        /* Home Banner */
+        .hero {
+            background: linear-gradient(
+                rgba(0,0,0,0.6),
+                rgba(0,0,0,0.6)
+            ), url("https://placehold.co/1400x600/654332/ffffff?text=Spice+Garden+Restaurant")
+            center/cover;
+            min-height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 30px;
+        }
+
+        .hero h2 {
+            color: #f4cc91;
+            font-size: 40px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #b64b32;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #873321;
+        }
+
+        /* About */
+        .about {
+            padding: 40px 20px;
+            text-align: center;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        /* Food Menu */
+        .menu {
+            padding: 40px 20px;
+            background-color: #f8eee2;
+        }
+
+        .category {
+            text-align: center;
+            color: #b64b32;
+            margin: 25px 0 15px;
+        }
+
+        .food-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .food-card {
+            background-color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #ddd;
+        }
+
+        .food-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .food-card h3 {
+            color: #7b2d26;
+            margin: 10px 0;
+        }
+
+        .price {
+            color: #b64b32;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Restaurant Ambience */
+        .ambience {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .ambience img {
+            width: 100%;
+            max-width: 900px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        /* Chef Profiles */
+        .chefs {
+            padding: 40px 20px;
+            background-color: #f8eee2;
+        }
+
+        .chef-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            max-width: 650px;
+            margin: auto;
+        }
+
+        .chef-card {
+            background: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .chef-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .chef-card h3 {
+            color: #7b2d26;
+        }
+
+        /* Customer Reviews */
+        .reviews {
+            padding: 40px 20px;
+        }
+
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .review-card {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            border-left: 4px solid #b64b32;
+            box-shadow: 0 2px 8px #ddd;
+        }
+
+        .stars {
+            color: #e5a52b;
+        }
+
+        /* Opening Hours */
+        .hours {
+            background-color: #3b2118;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        .hours h2 {
+            color: #e9b872;
+        }
+
+        /* Reservation Form */
+        .reservation {
+            padding: 40px 20px;
+            background-color: #f8eee2;
+        }
+
+        form {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #ddd;
+        }
+
+        form label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        form input,
+        form select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            width: 100%;
+            padding: 13px;
+            margin-top: 20px;
+            background-color: #b64b32;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        form button:hover {
+            background-color: #873321;
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #3b2118;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .hero h2 {
+                font-size: 30px;
+            }
+
+            .food-grid,
+            .chef-grid,
+            .review-grid {
+                grid-template-columns: 1fr;
+            }
+        }
